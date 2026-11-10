@@ -34,8 +34,10 @@ jobs:
       
       - name: Install Essential Tools
         run: |
+          sudo add-apt-repository ppa:zhangsongcui3371/fastfetch -y
           sudo apt-get update
-          sudo apt-get install -y htop curl wget nano vim
+          sudo apt-get install -y fastfetch htop curl wget nano vim
+          
       
           
       
